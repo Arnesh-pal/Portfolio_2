@@ -5,7 +5,7 @@ import React from "react";
 // Use \n in the title string to create a line break
 const projects = [
     {
-        id: "01",
+        id: "04",
         title: "Interactive\nDashboard",
         description: "A full-stack dynamic dashboard with React, Node.js, and PostgreSQL. Features Google OAuth, dynamic charts, full CRUD operations, and real-time server health monitoring.",
         imageUrl: "/four.png", // Placeholder image
@@ -13,7 +13,7 @@ const projects = [
         githubUrl: "https://github.com/Arnesh-pal/Dashboard",
     },
     {
-        id: "02",
+        id: "05",
         title: "Retro\nPokedex",
         description: "A retro-styled Pokédex built with vanilla JavaScript and Node.js. Features live search, browsing by generation, detailed Pokémon stats, and a fast backend using the PokeAPI.",
         imageUrl: "/five.png", // Placeholder image
@@ -21,7 +21,7 @@ const projects = [
         githubUrl: "https://github.com/Arnesh-pal/Retro_Pokedex-",
     },
     {
-        id: "03",
+        id: "06",
         title: "Real-Time\nLeaderboard",
         description: "A dynamic, full-stack user leaderboard built with the MERN stack and Socket.IO, showcasing real-time data synchronization for an instantly updated ranking experience.",
         imageUrl: "/six.png", // Placeholder image
