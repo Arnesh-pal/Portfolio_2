@@ -8,7 +8,8 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 // Import your page components
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Projects from "./pages/Projects";
+import Projects1 from "./pages/Projects1"; // Renamed from Projects
+import Projects2 from "./pages/Projects2"; // The new projects page
 import Contact from "./pages/Contact";
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
@@ -24,7 +25,6 @@ function App() {
   const [activeIndex, setActiveIndex] = useState(0);
   const activeIndexRef = useRef(activeIndex);
 
-  // 1. Add state to manage the mobile menu
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -34,7 +34,6 @@ function App() {
   useEffect(() => {
     const handleResize = () => {
       setIsDesktop(window.matchMedia("(min-width: 768px)").matches);
-      // Close mobile menu on resize to desktop
       if (window.matchMedia("(min-width: 768px)").matches) {
         setIsMenuOpen(false);
       }
@@ -45,7 +44,7 @@ function App() {
 
   useEffect(() => {
     if (!isDesktop) {
-      if (st.current) st.current.kill(); // Kill GSAP scroll trigger on mobile
+      if (st.current) st.current.kill();
       return;
     };
 
@@ -80,7 +79,7 @@ function App() {
 
   const handleNavLinkClick = (index) => {
     setActiveIndex(index);
-    setIsMenuOpen(false); // Close mobile menu on click
+    setIsMenuOpen(false);
 
     if (isDesktop) {
       const scrollTriggerInstance = st.current;
@@ -121,12 +120,13 @@ function App() {
           <div className="hidden md:flex items-center space-x-8">
             <a className={`nav-link ${activeIndex === 0 ? 'active' : ''}`} onClick={() => handleNavLinkClick(0)}>Home</a>
             <a className={`nav-link ${activeIndex === 1 ? 'active' : ''}`} onClick={() => handleNavLinkClick(1)}>About</a>
-            <a className={`nav-link ${activeIndex === 2 ? 'active' : ''}`} onClick={() => handleNavLinkClick(2)}>Projects</a>
-            <a className={`nav-link ${activeIndex === 3 ? 'active' : ''}`} onClick={() => handleNavLinkClick(3)}>Contact</a>
+            <a className={`nav-link ${activeIndex === 2 ? 'active' : ''}`} onClick={() => handleNavLinkClick(2)}>Projects 1</a>
+            <a className={`nav-link ${activeIndex === 3 ? 'active' : ''}`} onClick={() => handleNavLinkClick(3)}>Projects 2</a>
+            <a className={`nav-link ${activeIndex === 4 ? 'active' : ''}`} onClick={() => handleNavLinkClick(4)}>Contact</a>
           </div>
-          <a className="hire-me-btn hidden md:block" onClick={() => handleNavLinkClick(3)}>Hire Me</a>
+          <a className="hire-me-btn hidden md:block" onClick={() => handleNavLinkClick(4)}>Hire Me</a>
 
-          {/* 2. Hamburger Button */}
+          {/* Hamburger Button */}
           <button className="md:hidden z-50" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               {isMenuOpen ? (
@@ -138,26 +138,28 @@ function App() {
           </button>
         </nav>
 
-        {/* 3. Mobile Menu Panel */}
+        {/* Mobile Menu Panel */}
         {isMenuOpen && (
           <div className="md:hidden absolute top-0 left-0 w-full h-screen bg-black flex flex-col items-center justify-center space-y-8 text-2xl">
             <a className="nav-link" onClick={() => handleNavLinkClick(0)}>Home</a>
             <a className="nav-link" onClick={() => handleNavLinkClick(1)}>About</a>
-            <a className="nav-link" onClick={() => handleNavLinkClick(2)}>Projects</a>
-            <a className="nav-link" onClick={() => handleNavLinkClick(3)}>Contact</a>
-            <a className="hire-me-btn mt-4" onClick={() => handleNavLinkClick(3)}>Hire Me</a>
+            <a className="nav-link" onClick={() => handleNavLinkClick(2)}>Projects 1</a>
+            <a className="nav-link" onClick={() => handleNavLinkClick(3)}>Projects 2</a>
+            <a className="nav-link" onClick={() => handleNavLinkClick(4)}>Contact</a>
+            <a className="hire-me-btn mt-4" onClick={() => handleNavLinkClick(4)}>Hire Me</a>
           </div>
         )}
       </header>
 
       <main
         ref={mainContainerRef}
-        className={isDesktop ? "w-[400vw] h-screen flex flex-nowrap relative z-10" : "w-full flex flex-col"}
+        className={isDesktop ? "w-[500vw] h-screen flex flex-nowrap relative z-10" : "w-full flex flex-col"}
       >
         <div ref={addToRefs}><Home isActive={activeIndex === 0} /></div>
         <div ref={addToRefs}><About isActive={activeIndex === 1} /></div>
-        <div ref={addToRefs}><Projects isActive={activeIndex === 2} /></div>
-        <div ref={addToRefs}><Contact isActive={activeIndex === 3} /></div>
+        <div ref={addToRefs}><Projects1 isActive={activeIndex === 2} /></div>
+        <div ref={addToRefs}><Projects2 isActive={activeIndex === 3} /></div>
+        <div ref={addToRefs}><Contact isActive={activeIndex === 4} /></div>
       </main>
     </div>
   );
