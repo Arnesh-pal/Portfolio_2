@@ -1,12 +1,49 @@
-# React + Vite
+Here’s the updated README without the **Project Structure** and **Installation & Setup** sections:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+# Portfolio Website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A modern, interactive, and visually appealing **personal portfolio website** built with **React + Vite**, featuring **Aceternity UI** for sleek components and smooth animations. Designed to showcase projects, skills, and experiences with a unique and professional aesthetic.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Tech Stack
+
+* **Frontend:** [React](https://react.dev/) + [Vite](https://vitejs.dev/)
+* **UI Components:** [Aceternity UI](https://ui.aceternity.com/)
+* **Styling:** Tailwind CSS
+* **Animations:** Framer Motion
+* **Deployment:** Netlify
+
+---
+
+## ✨ Features
+
+* **Minimal & Modern Design** – Sleek UI with interactive animations.
+* **Aceternity UI Components** – Pre-built, elegant components for consistency.
+* **Responsive Layout** – Works seamlessly across devices.
+* **Smooth Transitions** – Framer Motion-powered animations.
+* **Project Showcase** – Interactive project cards with hover effects.
+* **Contact Section** – Easy way for recruiters or clients to reach out.
+
+---
+
+## 🌐 Live Demo
+
+[**View Portfolio**](https://arneshpal000.netlify.app/)
+
+---
+
+## 🤝 Contributions
+
+Contributions, issues, and feature requests are welcome!
+Feel free to fork the repo and submit a pull request.
+
+---
+
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
