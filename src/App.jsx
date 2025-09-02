@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects1 from "./pages/Projects1"; // Renamed from Projects
 import Projects2 from "./pages/Projects2"; // The new projects page
+import MoreProjects from "./pages/MoreProjects";
 import Contact from "./pages/Contact";
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
@@ -122,9 +123,10 @@ function App() {
             <a className={`nav-link ${activeIndex === 1 ? 'active' : ''}`} onClick={() => handleNavLinkClick(1)}>About</a>
             <a className={`nav-link ${activeIndex === 2 ? 'active' : ''}`} onClick={() => handleNavLinkClick(2)}>Projects 1</a>
             <a className={`nav-link ${activeIndex === 3 ? 'active' : ''}`} onClick={() => handleNavLinkClick(3)}>Projects 2</a>
-            <a className={`nav-link ${activeIndex === 4 ? 'active' : ''}`} onClick={() => handleNavLinkClick(4)}>Contact</a>
+            <a className={`nav-link ${activeIndex === 4 ? 'active' : ''}`} onClick={() => handleNavLinkClick(4)}>More Projects</a>
+            <a className={`nav-link ${activeIndex === 5 ? 'active' : ''}`} onClick={() => handleNavLinkClick(5)}>Contact</a>
           </div>
-          <a className="hire-me-btn hidden md:block" onClick={() => handleNavLinkClick(4)}>Hire Me</a>
+          <a className="hire-me-btn hidden md:block" onClick={() => handleNavLinkClick(5)}>Hire Me</a>
 
           {/* Hamburger Button */}
           <button className="md:hidden z-50" onClick={() => setIsMenuOpen(!isMenuOpen)}>
@@ -145,21 +147,22 @@ function App() {
             <a className="nav-link" onClick={() => handleNavLinkClick(1)}>About</a>
             <a className="nav-link" onClick={() => handleNavLinkClick(2)}>Projects 1</a>
             <a className="nav-link" onClick={() => handleNavLinkClick(3)}>Projects 2</a>
-            <a className="nav-link" onClick={() => handleNavLinkClick(4)}>Contact</a>
-            <a className="hire-me-btn mt-4" onClick={() => handleNavLinkClick(4)}>Hire Me</a>
+            <a className="nav-link" onClick={() => handleNavLinkClick(4)}>More Projects</a>
+            <a className="nav-link" onClick={() => handleNavLinkClick(5)}>Contact</a>
           </div>
         )}
       </header>
 
       <main
         ref={mainContainerRef}
-        className={isDesktop ? "w-[500vw] h-screen flex flex-nowrap relative z-10" : "w-full flex flex-col"}
+        className={isDesktop ? "w-[600vw] h-screen flex flex-nowrap relative z-10" : "w-full flex flex-col"}
       >
         <div ref={addToRefs}><Home isActive={activeIndex === 0} /></div>
         <div ref={addToRefs}><About isActive={activeIndex === 1} /></div>
         <div ref={addToRefs}><Projects1 isActive={activeIndex === 2} /></div>
         <div ref={addToRefs}><Projects2 isActive={activeIndex === 3} /></div>
-        <div ref={addToRefs}><Contact isActive={activeIndex === 4} /></div>
+        <div ref={addToRefs}><MoreProjects isActive={activeIndex === 4} /></div>
+        <div ref={addToRefs}><Contact isActive={activeIndex === 5} /></div>
       </main>
     </div>
   );

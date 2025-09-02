@@ -7,7 +7,7 @@ const projects = [
     {
         id: "04",
         title: "Interactive\nDashboard",
-        description: "A full-stack dynamic dashboard with React, Node.js, and PostgreSQL. Features Google OAuth, dynamic charts, full CRUD operations, and real-time server health monitoring.",
+        description: "A full-stack dynamic dashboard with React, Node.js and PostgreSQL. Features Google OAuth, dynamic charts, full CRUD operations and real-time server health monitoring.",
         imageUrl: "/four.png", // Placeholder image
         demoUrl: "https://uboard.netlify.app/login",
         githubUrl: "https://github.com/Arnesh-pal/Dashboard",
@@ -15,7 +15,7 @@ const projects = [
     {
         id: "05",
         title: "Retro\nPokedex",
-        description: "A retro-styled Pokédex built with vanilla JavaScript and Node.js. Features live search, browsing by generation, detailed Pokémon stats, and a fast backend using the PokeAPI.",
+        description: "A retro-styled Pokédex built with vanilla JavaScript and Node.js. Features live search, browsing by generation, detailed Pokémon stats and a fast backend using the PokeAPI.",
         imageUrl: "/five.png", // Placeholder image
         demoUrl: "https://pokedex03.netlify.app",
         githubUrl: "https://github.com/Arnesh-pal/Retro_Pokedex-",
@@ -23,7 +23,7 @@ const projects = [
     {
         id: "06",
         title: "Real-Time\nLeaderboard",
-        description: "A dynamic, full-stack user leaderboard built with the MERN stack and Socket.IO, showcasing real-time data synchronization for an instantly updated ranking experience.",
+        description: "A dynamic, full-stack user leaderboard built with MERN stack and Socket.IO, showcasing real-time data synchronization for an instantly updated ranking experience.",
         imageUrl: "/six.png", // Placeholder image
         demoUrl: "https://random-ranking-front.vercel.app/",
         githubUrl: "https://github.com/Arnesh-pal/random-ranking-front",

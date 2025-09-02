@@ -7,7 +7,7 @@ const projects = [
     {
         id: "01",
         title: "To Do\nManager",
-        description: "Lets users manage tasks, track history, and boost productivity with Pomodoro timers, sticky notes and daywise summaries.",
+        description: "Let's user manage tasks, track history and boost productivity with Pomodoro timers, sticky notes and daywise summaries.",
         imageUrl: "/sevv.png",
         demoUrl: "https://to-do-woodoo-supabase.vercel.app/",
         githubUrl: "https://github.com/Arnesh-pal/ToDoWoodoo_Supabase",
@@ -15,7 +15,7 @@ const projects = [
     {
         id: "02",
         title: "Eye Disease\nClassification",
-        description: "Classifies eye conditions such as Diabetic Retinopathy, Glaucoma, Myopia, and Normal Fundus using medical image data.",
+        description: "Classifies eye conditions such as Diabetic Retinopathy, Glaucoma, Myopia and Normal Fundus using CNN.",
         imageUrl: "/two.png",
         demoUrl: "https://huggingface.co/spaces/arneshpal/eye-disease-classifier",
         githubUrl: "https://github.com/Arnesh-pal/EyeVision",

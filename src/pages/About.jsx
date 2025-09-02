@@ -6,7 +6,7 @@ import { TextGenerateEffect } from "../components/TextGenerateEffect";
 
 const aboutMeTitle = "About Me";
 // Combine the two paragraphs into one string, separated by a newline character (\n)
-const aboutMeParagraph = "Hi, I’m Arnesh Pal — a developer passionate about building intelligent, user-centric applications. I craft seamless experiences with React, Next.js, and Node.js, and build robust backends with MongoDB and Supabase.\nI leverage AI and Machine Learning to design smart solutions for real-world challenges.";
+const aboutMeParagraph = "Hi, I’m Arnesh Pal — a developer passionate about building intelligent, user-focused applications. I specialize in creating seamless front-end experiences with React and Next.js, while engineering scalable backends with Node.js, MongoDB, and Supabase. \nI also leverage AI and Machine Learning to craft innovative solutions that solve real-world problems and enhance user engagement.";
 
 function About() {
     return (

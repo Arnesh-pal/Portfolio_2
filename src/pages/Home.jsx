@@ -6,7 +6,7 @@ import { LinkPreview } from "../components/LinkPreview";
 
 function Home() {
     const [typedText, setTypedText] = useState("");
-    const typewriterText = " I build immersive digital experiences where technology meets creativity.";
+    const typewriterText = " Building immersive digital experiences where technology meets creativity.";
 
     const headingRef = useRef(null);
 
